@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center_horizontal"
+    android:padding="8dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:gravity="center">
+
+
+    <ImageView
+        android:id="@+id/imgProductitem"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:src="@mipmap/ic_launcher" />
+
+    <TextView
+        android:id="@+id/Productitemname"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/imgProductitem"
+        android:layout_marginTop="1dp"
+        android:gravity="center"
+        android:layout_centerHorizontal="true"
+        android:text="Tên sản " />
+    <TextView
+        android:id="@+id/PriProductitem"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textStyle="bold"
+        android:textColor="#CD2A2A"
+        android:layout_below="@id/Productitemname"
+        android:layout_marginTop="1dp"
+        android:gravity="center"
+        android:layout_centerHorizontal="true"
+        android:text="Gias" />
+
+
+</LinearLayout>

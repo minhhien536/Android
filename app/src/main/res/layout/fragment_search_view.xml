@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/background_color"
+    android:layout_marginBottom="60dp"
+    tools:context=".Fragment.SearchViewFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:layout_height="wrap_content"
+        tools:context=".SearchActivity"
+        >
+
+        <AutoCompleteTextView
+            android:id="@+id/actpSearch"
+            android:layout_width="match_parent"
+            android:layout_height="?actionBarSize"
+            android:completionThreshold="1"
+            app:showAsAction="always"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            app:queryHint="Search here"
+            />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rcvResultList"
+            android:layout_margin="10dp"
+            android:layout_marginTop="30dp"
+            app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+        </androidx.recyclerview.widget.RecyclerView>
+
+    </LinearLayout>
+
+</ScrollView>
+
+
+
+

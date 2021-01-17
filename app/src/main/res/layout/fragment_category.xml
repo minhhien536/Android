@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:id="@+id/frag2" xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".Fragment.CategoryFragment">
+
+    <LinearLayout
+        android:id="@+id/layoutCategory"
+        android:layout_width="wrap_content"
+        android:background="@color/second_color"
+        android:layout_height="match_parent">
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:backgroundTint="@color/purple"
+            android:id="@+id/rcwCategory"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+    </LinearLayout>
+
+    <GridView
+        android:id="@+id/grvProduct"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@id/layoutCategory"
+        android:numColumns="3" />
+    />
+
+</RelativeLayout>
